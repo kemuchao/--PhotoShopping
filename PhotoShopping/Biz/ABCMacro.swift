@@ -16,17 +16,17 @@ import Photos
 typealias Mapper = ObjectMapper.Mapper
 
 #if QA
-let kBaseURLString              = "https://clienttest.tee.com"
-let kBaseUploadImageURLString   = "https://ai.tee.com:443/starlink"
+let kBaseURLString              = ""
+let kBaseUploadImageURLString   = ""
 #else
-let kBaseURLString              = "https://clienttest.tee.com"
-let kBaseUploadImageURLString   = "https://ai.tee.com:443/starlink"
+let kBaseURLString              = ""
+let kBaseUploadImageURLString   = ""
 #endif
 
 
-//let defaultUserIcon = "https://courses.abctime.com/share/default_avatar.png"
-let defaultBoyIcon  = "https://courses.abctime.com/share/default_avatar_boy.png"
-let defaultGrilIcon = "https://courses.abctime.com/share/default_avatar_girl.png"
+//let defaultUserIcon = ""
+let defaultBoyIcon  = ""
+let defaultGrilIcon = ""
 // MARK: - Cache Path
 public let kCachePath: String = validString(NSSearchPathForDirectoriesInDomains(FileManager.SearchPathDirectory.cachesDirectory, FileManager.SearchPathDomainMask.userDomainMask, true).last)
 
